@@ -1,0 +1,89 @@
+@import url('https://rsms.me/inter/inter.css');
+:root {
+    --tblr-font-sans-serif: Inter, -apple-system, BlinkMacSystemFont, San Francisco, Segoe UI, Roboto, Helvetica Neue, sans-serif;
+}
+
+.pizzaphoto {
+    width: 100px;
+} 
+
+.btn {
+    display: inline-block;
+    padding: 0 25px;
+    height: 6vh;
+    margin-top: 3px;
+    font-size: .9rem;
+    border: 1px solid #007bff;
+    transition: border-color 0.3s ease-in-out;
+    text-decoration: none;
+    color: inherit;
+}
+
+.btn:hover {
+    background: #007bff; 
+    color: #ffff;
+}
+
+.icon-tabler-search {
+    position: relative;
+    top: -30px;
+    left: 85%;
+    color: #666;
+}
+
+#searchInput:focus + svg {
+    display: none;
+}
+.search-bar {
+    position: relative;
+}
+
+.search-bar input[type="search"] {
+    padding-right: 30px; 
+}
+
+.icon-tabler-search {
+    position: absolute;
+    right: 10px;
+    top: 50%;
+    transform: translateY(-50%);
+    pointer-events: none; 
+}
+
+.search-bar input[type="search"]:focus + .icon-tabler-search {
+    display: none;
+}
+
+::placeholder {
+    position: relative;
+    top: 2px;
+}
+
+.tag-dropdown {
+    position: relative;
+}
+
+.tag-dropdown .dropdown-menu {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 13px;
+    background-color: #fff;
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
+    z-index: 1000;
+}
+
+.tag-dropdown:hover .dropdown-menu {
+    display: block;
+}
+
+.dropdown-item {
+    padding: 10px 15px;
+    text-decoration: none;
+    color: #333;
+    display: block;
+}
+
+.dropdown-item:hover {
+    background-color: #f0f0f0;
+}

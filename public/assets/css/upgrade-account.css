@@ -1,0 +1,229 @@
+.custom-select {
+    position: relative;
+    width: 410px;
+    bottom: 5;
+}
+
+.fa-chevron-down {
+    position: relative;
+    float: right;
+    right: 10px;
+    bottom: 28px;
+}
+
+/* Style the select element */
+.input-select {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    appearance: none; /* Remove default arrow in some browsers */
+}
+
+.container {
+    width: 315px;
+    height: 70px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    position: relative;
+    top: 10px;
+}
+
+.receipt-upload-wrapper {
+    overflow: hidden;
+    position: relative;
+    margin: 10px;
+    top: 5px;
+    right: 10px;
+    display: inline-block;
+    border: 2px solid #3498db;
+    background-color: #fff;
+    color: #3498db;
+    border-radius: 5px;
+    padding: 5px 15px;
+    cursor: pointer;
+}
+
+.receipt-upload-field {
+    display: none;
+}
+    
+.receipt-upload-label {
+    font-size: 16px;
+    font-weight: 600;
+    text-transform: initial;
+}
+
+#img-preview {
+    width: 20%;
+    height: 50px;
+    margin-top: 20px;
+    display: none;
+    position: relative;
+    float: right;
+    right: 32%;
+    bottom: 10px;
+}
+
+.container img {
+    width: 20%;
+    object-fit: cover;
+    border: 2px solid #3498db;
+}
+
+.wrapper {
+    width: 408px;
+    height: 70px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    position: relative;
+    top: 5px;
+}
+
+.form {
+    text-align: center;
+}
+
+.id-upload-wrapper {
+    overflow: hidden;
+    position: relative;
+    margin: 10px;
+    overflow: hidden;
+    top: 5px;
+    left: 5px;
+    display: inline-block;
+    border: 2px solid #3498db;
+    background-color: #fff;
+    color: #3498db;
+    border-radius: 5px;
+    padding: 5px 15px;
+    cursor: pointer;
+}
+
+.id-upload-field {
+    display: none;
+}
+    
+.id-upload-label {
+    font-size: 16px;
+    font-weight: 600;
+    text-transform: initial;
+}
+
+#image-preview {
+    width: 19%;
+    height: 50px;
+    position: relative;
+    left: 48%;
+    bottom: 53px;
+    margin-top: 0;
+    display: none;
+}
+
+.wrapper img {
+    width: 100%; /* Set the image width to 100% */
+    height: auto; /* Maintain the image's aspect ratio */
+    object-fit: cover;
+    border: 2px solid #3498db;
+}
+
+.file-name {
+    position: relative;
+    left: 90px;
+    bottom: 20px;
+}
+
+.new-file-name {
+    position: relative;
+    left: 105px;
+    bottom: 20px;
+}
+
+/* Modal styles */
+.modal {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 1000;
+    animation: slideIn 0.5s forwards; 
+}
+  
+  /* Modal content for payment method */
+.modal-content {
+    background-color: #fff;
+    padding: 20px;
+    height: 470px;
+    width: 100px;
+    border-radius: 5px;
+    position: absolute;
+    top: -52%; 
+    left: 50%;
+    transform: translate(-50%, 0);
+    animation: slideUp 0.5s forwards; 
+}
+
+  @keyframes slideIn {
+    from {
+      opacity: 0;
+    }
+    to {
+      opacity: 1;
+    }
+  }
+
+  @keyframes slideUp {
+    from {
+      top: -50%;
+    }
+    to {
+      top: 50%;
+      transform: translate(-50%, -50%);
+    }
+  }
+  
+.image {
+    width: 290px;
+    position: relative;
+    bottom: 20px;
+    left: 0;
+    object-fit: cover;
+    z-index: 1;
+    height: 380px;
+    border: 3px solid #222;
+}
+
+
+.privacy {
+    position: relative;
+    top: 15px;
+    font-size: 13px;
+}
+
+.close {
+    position: relative;
+    left: 45%;
+    font-size: 30px;
+    font-weight: 500;
+    cursor: pointer;
+}
+
+.close-btn {
+    position: relative;
+    left: 10px;
+    top: 340px;
+    font-size: 15px;
+    padding: 7px 25px;
+    color: #fff;
+    background: #888;
+    font-weight: 500;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+.close:hover,
+.close-btn:hover {
+    background: #777;
+}

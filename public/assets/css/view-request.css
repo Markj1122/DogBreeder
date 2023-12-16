@@ -1,0 +1,172 @@
+.border-box-container {
+    border: 1px solid #ccc;
+    padding: 20px;
+    width: 49%;
+    height: 61vh;
+    position: absolute;
+    top: 20px;
+    left: 28%;
+    border-radius: 5px;
+}
+
+.modal-content {
+    height: 50vh;
+    min-width: 150px;
+}
+
+.form-label-profile {
+    font-size: 1.1rem;
+    font-weight: bold;
+    position: relative;
+    bottom: 0;
+    left: 75px;
+}
+
+.form-label-id {
+    font-size: 1.1rem;
+    font-weight: bold;
+    position: relative;
+    bottom: 205px;
+    float: right;
+    right: 18%;
+}
+
+.profile-image {
+    width: 28%;
+    height: 25vh;
+    border-radius: 5px;
+    position: relative;
+    top: 10px;
+    left: 10px;
+    border: 1px solid #888;
+    object-fit: cover;
+}
+
+.id-image {
+    width: 28%;
+    height: 25vh;
+    border-radius: 5px;
+    position: relative;
+    top: 10px;
+    object-fit: cover;
+    border: 1px solid #888;
+    right: 22%;
+}
+
+.receipt-image {
+    width: 28%;
+    height: 25vh;
+    border-radius: 5px;
+    position: relative;
+    bottom: 153px;
+    object-fit: cover;
+    border: 1px solid #888;
+    left: 41%;
+}
+
+.profile-btn {
+    padding: 8px 38px;
+    border: none;
+    border-radius: 5px;
+    background: #888;
+    position: relative;
+    top: 120px;
+    right: 27%;
+}
+
+.id-btn {
+    padding: 8px 53px;
+    border: none;
+    border-radius: 5px;
+    background: #888;
+    position: relative;
+    bottom: 42px;
+    left: 35%;
+}
+
+.receipt-btn {
+    padding: 8px 34px;
+    border: none;
+    border-radius: 5px;
+    background: #888;
+    position: relative;
+    bottom: 42px;
+    left: 78px;
+}
+
+.profile-btn:hover,
+.id-btn:hover,
+.receipt-btn:hover {
+    background: #777;
+}
+
+hr {
+    position: relative;
+    bottom: 120px;
+}
+
+.name-email {
+    justify-content: space-between;
+    font-size: 17px;
+    position: relative;
+    bottom: 135px;
+    left: 10px;
+}
+
+.email-label,
+.email-text {
+     position: relative;
+     left: 110px;
+}
+
+.date-payment {
+    justify-content: space-between;
+    font-size: 17px;
+    position: relative;
+    bottom: 120px;
+    left: 10px;
+}
+
+.date-label,
+.date-text {
+    position: relative;
+    left: 30%;
+}
+
+.btn-text {
+    position: relative;
+    bottom: 100px;
+    left: 10px;
+}
+
+/* Modal Style */
+.modal {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    justify-content: center;
+    align-items: center;
+}
+
+.modal-content {
+    background-color: #fefefe;
+    padding: 20px;
+    border-radius: 5px;
+    object-fit: contain;
+    margin-left: 50px;
+    max-width: 500px;
+    position: absolute;
+}
+
+.modal-container i {
+    position: relative;
+    left: 71.40%;
+    top: 23px;
+    font-size: 25px;
+    z-index: 1;
+    cursor: pointer;
+}

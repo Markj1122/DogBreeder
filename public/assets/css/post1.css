@@ -1,0 +1,177 @@
+.open-modal {
+    padding: 8px 20px;
+    position: relative; 
+    left: 10%;
+    bottom: 0;
+    border-radius: 20px;
+    color: #ffff;
+    background-color: #007BFF;
+    border: none;
+}
+
+.open-modal:hover {
+    background-color: #4aa0e6;
+ }
+
+.text-header {
+    text-align: center;
+    position: relative;
+    top: 0;
+}
+
+/* Style the search container */
+.search-container {
+    display: flex;
+    float: right;
+    right: 90px;
+    align-items: center;
+    width: 280px;
+    position: relative;
+    top: 0;
+}
+
+.search-container button {
+    position: relative;
+    bottom: 0;
+    right: 0;
+}
+
+/* Style the search input field */
+.search-container input[type="text"] {
+    padding: 8px;
+    width: 70%;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    outline: none;
+}
+
+/* Style the search button */
+.search-container button[type="submit"] {
+    background-color: #007BFF;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    padding: 7px 12px;
+    cursor: pointer;
+    font-size: 15px;
+    margin-left: 3px;
+}
+
+.search-container button:hover {
+    background-color: #4aa0e6;
+}
+
+/* Display the search result */
+.search-result {
+    font-size: 1.2rem;
+    position: relative;
+    bottom: 20px;
+    left: 30px;
+}
+
+.search-result strong {
+    width: fit-content;
+    height: 5vh;
+    background-color: #ccc;
+}
+    
+/* Add post modal */
+.modal {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    transition: all 0.3s ease-in-out;
+    height: 100%;
+    background-color: rgba(0,0,0,0.5);
+}
+
+.modal-content {
+    background-color: #fff;
+    max-width: 530px;
+    max-height: 78%;
+    animation: slideIn 0.5s forwards;
+    margin: 100px auto;
+    overflow: hidden;
+    padding: 20px;
+    position: relative;
+    bottom: 35px;
+    border-radius: 5px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+}
+
+/* Keyframes for the modal animation */
+@keyframes slideIn {
+    0% {
+      top: -90%;
+      left: -40%;
+      width: 0;
+      height: 0;
+    }
+    100% {
+      top: 40%;
+      left: 22%;
+      width: 80%;
+      height: 80%;
+      transform: translate(-50%, -50%);
+    }
+  }
+
+.content {
+    margin-bottom: 20px;
+}
+
+.modal-content h2 {
+    text-align: center;
+}
+
+.modal-content h3 {
+    position: relative;
+    font-size: 1rem;
+    bottom: 90px;
+    left: 77px;
+}
+
+.modal-content hr {
+    position: relative;
+    bottom: 12px;
+}
+
+.modal-content .profile {
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    position: relative;
+    bottom: 35px;
+    left: 8px;
+    object-fit: cover;
+    border: 3px solid #666;
+}
+
+ .privacy {
+    width: 75px;
+    position: relative;
+    left: 78px;
+    bottom: 105px;
+    /* bottom: 105px; //ISSUE COME FROM HERE */
+    border-radius: 30px;
+    background: #ccc;
+    cursor: pointer;
+}
+
+.modal-content .privacy span {
+    margin-left: 6px;
+    font-size: .9rem;
+}
+
+.modal-content .privacy i {
+    color: #3a96e2;
+    font-size: 13px;
+    position: relative;
+    bottom: 0;
+    left: 5px;
+}
+
+
+

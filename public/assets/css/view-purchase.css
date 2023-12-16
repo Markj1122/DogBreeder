@@ -1,0 +1,99 @@
+.table {
+     border-collapse: collapse;
+     width: 100%;
+}
+
+.table th,
+.table td,
+.table-responsive {
+    border: 1px solid #000;
+    padding: 8px;
+}
+
+.table th {
+    text-align: left;
+}
+
+.modal-backdrop.show {
+    backdrop-filter: blur(4px);
+    -webkit-backdrop-filter: blur(4px);
+}
+
+.modal-content {
+    height: 60vh;
+    max-width: 380px;
+    position: relative;
+    left: 23%;
+}
+
+.image {
+    width: 97%;
+    height: 27vh;
+    border-radius: 5px;
+    position: relative;
+    top: 5px;
+    left: 5px;
+    border: 1px solid #888;
+    object-fit: cover;
+}
+
+hr {
+    position: relative;
+    bottom: 10px;
+}
+
+.form-label-image {
+    position: relative;
+    top: 5px;
+    font-size: .9rem;
+    font-weight: bold;
+    left: 5px;
+}
+
+.form-label-breeder {
+    position: relative;
+    bottom: 30px;
+    left: 5px;
+    font-size: 1rem;
+    font-weight: bold;
+}
+
+.type {
+    display: flex;
+    position: relative;
+    bottom: 15px;
+    justify-content: space-between;
+    left: 5px;
+    font-size: 1rem;
+    font-weight: bold;
+}
+
+.type span {
+    position: relative;
+    top: 1px;
+    right: 30px;
+    font-size: 1rem;
+    font-weight: 300;
+}
+
+.form-label-price {
+    position: relative;
+    bottom: 65px;
+    left: 5px;
+    font-size: 1rem;
+    font-weight: bold;
+}
+
+.text-label-breeder {
+    position: relative;
+    font-size: 1rem;
+    bottom: 30px;
+    left: 15px;
+}
+
+.text-label-price {
+    position: relative;
+    font-size: 15px;
+    bottom: 65px;
+    left: 15px;
+}

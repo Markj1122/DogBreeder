@@ -1,0 +1,125 @@
+@import url('https://rsms.me/inter/inter.css');
+
+:root {
+  --tblr-font-sans-serif: Inter, -apple-system, BlinkMacSystemFont, San Francisco, Segoe UI, Roboto, Helvetica Neue, sans-serif;
+}
+
+.pizzaphoto {
+    width: 100px;
+}
+
+.icon-tabler-search {
+    position: relative;
+    top: -30px;
+    left: 85%;
+    color: #666;
+ }
+
+ #searchInput:focus + svg {
+    display: none;
+ }
+
+.search-bar {
+    position: relative;
+ }
+
+.search-bar input[type="search"] {
+    padding-right: 30px; 
+}
+
+.icon-tabler-search {
+    position: absolute;
+    right: 10px;
+    top: 50%;
+    transform: translateY(-50%);
+    pointer-events: none; 
+}
+
+.search-bar input[type="search"]:focus + .icon-tabler-search {
+    display: none;
+}
+
+.dropdown-menu-end {
+    position: relative;
+}
+
+.dropdown-menu-end details div {
+    position: absolute;
+    left: 90%;
+    margin-left: 5px;
+}
+
+.dropdown-list {
+    background: transparent;
+    margin: 6px;
+}
+
+.rounded-image {
+    border-radius: 50%;
+    border: 2px solid #999;
+}
+
+.count-breeder {
+    position: relative;
+    width: 14px;
+    font-size: 8px;
+    height: 14px;
+    padding: 2px 4px;
+    color: #fff;
+    bottom: 31px;
+    right: 20px;
+    border: 1px solid #fff;
+    border-radius: 50%;
+    background: red;
+}
+
+.count-request {
+    position: relative;
+    width: 15px;
+    font-size: 9px;
+    height: 15px;
+    padding: 1px 4px;
+    color: #fff;
+    bottom: 170px;
+    border: none;
+    border-radius: 50%;
+    background: red;
+}
+
+.hidden {
+    display: none;
+}
+
+.tag-dropdown {
+    position: relative;
+}
+
+.tag-dropdown .dropdown-menu {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 13px;
+    background-color: #fff;
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
+    z-index: 1000;
+}
+
+.tag-dropdown:hover .dropdown-menu {
+    display: block;
+}
+
+.dropdown-item {
+    padding: 10px 15px;
+    text-decoration: none;
+    color: #333;
+    display: block;
+}
+
+.dropdown-item i {
+    position: relative;
+    left: 0;
+}
+
+.dropdown-item:hover {
+    background-color: #f0f0f0;
+}

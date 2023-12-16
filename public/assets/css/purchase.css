@@ -1,0 +1,200 @@
+.modal-body {
+    padding: 10px 0;
+}
+  
+.name-container {
+    display: flex;
+    justify-content: space-between;
+    gap: 10px;
+    width: 90%;
+    margin: 22px;
+    position: relative;
+    right: 22px;
+    top: 15px;
+}
+
+.tracking-container {
+    position: relative;
+    top: 30px;
+}
+
+.tracking-container i {
+    position: relative;
+    bottom: 65px;
+    right: 27px;
+    font-size: 21px;
+    color: #888;
+}
+
+.tracking-container button {
+    position: absolute;
+    right: 5px; 
+    top: 70%;
+    transform: translateY(-50%);
+    background: none;
+    border: none;
+    cursor: pointer;
+}
+
+.modal-header h5 {
+    position: relative;
+    left: 31%;
+}
+
+.tracking-container input[type="text"] {
+    width: 90%;
+    padding: 10px;
+    margin: 5px 0;
+    position: relative;
+    left: 27px;
+    bottom: 55px;
+    border: 1px solid #17c034;  
+    border-radius: 5px; 
+}
+
+.name-container input[type="text"],
+.contact input[type="number"],
+.address textarea,
+.group-select select {
+    width: 90%;
+    padding: 10px;
+    margin: 5px 0;
+    position: relative;
+    left: 27px;
+    bottom: 55px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}   
+
+.group-select {
+    display: flex;
+    width: 90%;
+    gap: 10px;
+    justify-content: space-between;
+    position: relative;
+    top: 7px;
+}
+
+.body-line {
+    position: relative;
+    bottom: 65px;
+}
+
+.buttons {
+    display: flex;
+    gap: 15px;
+    position: relative;
+    bottom: 25px;
+    left: 110px;
+}
+  
+.submit-btn {
+    background-color: blue;
+    color: #fff;
+    padding: 7px 50px;
+    border: none;
+    border-radius: 20px;
+    cursor: pointer;
+    font-size: 1rem;
+}
+
+.close-btn {
+    background-color: #666;
+    color: #fff;
+    padding: 7px 50px;
+    border: none;
+    border-radius: 20px;
+    cursor: pointer;
+    font-size: 1rem;
+}
+  
+.modal-card {
+    width: 480px;
+    height: 450px;
+    background: #ffff;
+}
+
+/* CSS for see more post */
+.modal-cards {
+    position: relative;
+    left: 50px;
+    bottom: 30px;
+    width: 430px;
+    height: 470px;
+    background: #ffff;
+}
+
+.vaccine-image {
+    position: relative;
+    left: 27%;
+}
+
+.vaccine-image img {
+    width: 180px;
+    height: 170px;
+    object-fit: cover;
+    border: 2px solid #666;
+}
+
+.dob {
+    display: flex;
+    font-size: 1rem;
+    justify-content: space-evenly;
+    position: relative;
+    top: 10px;
+}
+
+.birthdate label {
+    font-weight: bold;
+}
+
+.sire-image {
+    position: relative;
+    top: 10px;
+    right: 80px;
+}
+
+.sire-image label {
+    font-size: .8rem;
+    font-weight: bold;
+    padding: 2px 8px;
+    background: #ffff;
+    position: relative;
+    left: 33%;
+    top: 62px;
+}
+
+.sire-image img {
+    width: 170px;
+    height: 150px;
+    object-fit: cover;
+    border: 2px solid #666;
+}
+
+.dam-image {
+    position: relative;
+    bottom: 140px;
+    left: 80px;
+}
+
+.dam-image label {
+    font-size: .8rem;
+    font-weight: bold;
+    padding: 2px 7px;
+    background: #ffff;
+    position: relative;
+    top: 63px;
+    left: 36%;
+}
+
+.dam-image img {
+    width: 170px;
+    height: 150px;
+    object-fit: cover;
+    border: 2px solid #666;
+}
+
+.btn-close {
+    position: relative;
+    left: 85%;
+}

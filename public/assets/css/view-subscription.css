@@ -1,0 +1,244 @@
+.table {
+    border-collapse: collapse;
+    width: 100%;
+}
+ 
+.table th,
+.table td,
+.table-responsive {
+    border: 1px solid #000;
+    padding: 8px;
+}
+ 
+.table th {
+    text-align: left;
+}
+
+.page-title {
+    position: relative;
+    top: 25px;
+} 
+
+#refresh-button {
+    padding: 5px 15px;
+    font-size: 16px;
+    border: none;
+    float: right;
+    background: #258ae9;
+    color: #fff;
+    border-radius: 20px;
+    cursor: pointer;
+}
+ 
+ #refresh-button:hover {
+    background: #3596f1;
+}
+ 
+#loader {
+    border: 6px solid #f3f3f3;
+    border-top: 10px solid #3498db;
+    border-radius: 50%;
+    width: 80px;
+    height: 80px;
+    animation: spin 1s linear infinite;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 1000;
+}
+ 
+.hidden {
+    display: none;
+}
+ 
+@keyframes spin {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+}
+
+/* Styles for the modal */
+.modal {
+    display: none; /* Hidden by default */
+    position: fixed;
+    z-index: 1;
+    padding-top: 50px;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgba(0,0,0,0.9);
+  }
+  
+/* Styles for the close button */
+.close {
+    position: absolute;
+    top: 15px;
+    right: 35px;
+    color: white;
+    font-size: 30px;
+    cursor: pointer;
+}
+  
+/* Styles for the image in the modal */
+.modal img {
+    display: block;
+    margin: 0 auto;
+    max-width: 90%;
+    max-height: 90%;
+}
+  
+.border-box-container {
+    border: 1px solid #ccc;
+    padding: 20px;
+    width: 45%;
+    height: 61vh;
+    position: absolute;
+    top: 20px;
+    left: 28%;
+    border-radius: 5px;
+}
+
+.modal-content {
+    height: 55vh;
+    min-width: 150px;
+}
+
+.profile-image {
+    width: 28%;
+    height: 23vh;
+    border-radius: 5px;
+    position: relative;
+    top: 30px;
+    left: 4%;
+    border: 1px solid #888;
+    object-fit: cover;
+}
+
+.id-image {
+    width: 28%;
+    height: 23vh;
+    border-radius: 5px;
+    position: relative;
+    top: 30px;
+    object-fit: cover;
+    border: 1px solid #888;
+    right: 21%;
+}
+
+.receipt-image {
+    width: 28%;
+    height: 23vh;
+    border-radius: 5px;
+    position: relative;
+    bottom: 120px;
+    object-fit: cover;
+    border: 1px solid #888;
+    left: 40%;
+}
+
+.profile-btn {
+    padding: 8px 30px;
+    background: #888;
+    border: none;
+    color: #fff;
+    border-radius: 5px;
+    position: relative;
+    top: 130px;
+    right: 138px;
+}
+
+.id-btn {
+    padding: 8px 43px;
+    background: #888;
+    border: none;
+    color: #fff;
+    border-radius: 5px;
+    position: relative;
+    bottom: 20px;
+    left: 37%;
+}
+
+.receipt-btn {
+    padding: 8px 26px;
+    background: #888;
+    border: none;
+    color: #fff;
+    border-radius: 5px;
+    position: relative;
+    bottom: 20px;
+    left: 11.40%;
+}
+
+.profile-btn:hover,
+.id-btn:hover,
+.receipt-btn:hover {
+    background: #777;
+}
+
+hr {
+    position: relative;
+    bottom: 90px;
+}
+
+.name-label,
+.email-label,
+.payment-label {
+    font-size: 1rem;
+    font-weight: bold;
+}
+
+.name-label {
+    position: relative;
+    bottom: 140px;
+    left: 25px;
+}
+
+.email-label {
+    position: relative;
+    bottom: 150px;
+    left: 25px;
+}
+
+.payment-label {
+    position: relative;
+    bottom: 155px;
+    left: 25px;
+}
+
+.name-text {
+    position: relative;
+    bottom: 140px;
+    left: 25px;
+    font-size: 18px;
+}
+
+.email-text {
+    position: relative;
+    bottom: 150px;
+    left: 25px;
+    font-size: 18px;
+}
+
+.payment-text {
+    position: relative;
+    bottom: 155px;
+    left: 27px;
+    font-size: 18px;
+}
+
+.date-text {
+    position: relative;
+    bottom: 100px;
+    left: 82%;
+    font-size: 14px;
+}
+
+.btn-text {
+    position: relative;
+    float: right;
+    bottom: 195px;
+    right: 20px;
+    font-size: 15px;
+}

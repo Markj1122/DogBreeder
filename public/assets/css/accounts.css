@@ -1,0 +1,46 @@
+.center {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.text-end {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.upload {
+    width: 100px;
+    position: relative;
+    margin: auto;
+}
+
+.upload img {
+    border-radius: 50%;
+    border: 6px solid #eaeaea;
+}
+
+.upload .round {
+    position: absolute;
+    bottom: 10px;
+    right: 0;
+    background: #00B4FF;
+    width: 25px;
+    height: 25px;
+    line-height: 24px;
+    text-align: center;
+    border-radius: 50%;
+    overflow: hidden;
+}
+
+.upload .round input[type="file"] {
+    position: absolute;
+    transform: scale(2);
+    opacity: 0;
+}
+
+.page-body {
+    position: relative;
+    bottom: 55px;
+}

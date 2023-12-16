@@ -1,0 +1,112 @@
+@import url('https://rsms.me/inter/inter.css');
+
+:root {
+  --tblr-font-sans-serif: Inter, -apple-system, BlinkMacSystemFont, San Francisco, Segoe UI, Roboto, Helvetica Neue, sans-serif;
+}
+
+.pizzaphoto {
+    width: 100px;
+}
+
+.hidden {
+    display: none;
+}
+
+.dropdown-menu-end {
+    position: relative;
+}
+
+.dropdown-menu-end details div {
+    position: absolute;
+    left: 90%;
+    margin-left: 5px;
+}
+
+.dropdown-list {
+    background: transparent;
+    margin: 6px;
+}
+
+.dropdown-item i {
+    position: relative;
+    left: 0;
+}
+
+.rounded-image {
+    border-radius: 50%;
+    border: 2px solid #999;
+}
+
+.count-notifications {
+    position: relative;
+    width: 14px;
+    font-size: 8px;
+    height: 14px;
+    padding: 2px 3px;
+    color: #fff;
+    bottom: 31px;
+    right: 20px;
+    border: 1px solid #fff;
+    border-radius: 50%;
+    background: red;
+  }
+
+.count-purchase {
+    position: relative;
+    width: 14px;
+    font-size: 8px;
+    height: 14px;
+    padding: 1px 3px;
+    color: #fff;
+    top: 3px;
+    float: right;
+    border: 1px solid #fff;
+    border-radius: 50%;
+    background: red;
+}
+
+.count-request {
+    position: relative;
+    width: 15px;
+    font-size: 9px;
+    height: 15px;
+    padding: 1px 4px;
+    color: #fff;
+    bottom: 170px;
+    border: none;
+    border-radius: 50%;
+    background: red;
+}
+
+.hidden {
+    display: none;
+}
+
+.tag-dropdown {
+    position: relative;
+}
+
+.tag-dropdown .dropdown-menu {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 13px;
+    background-color: #fff;
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
+    z-index: 1000;
+}
+
+.tag-dropdown:hover .dropdown-menu {
+    display: block;
+}
+
+.dropdown-item {
+    padding: 10px 15px;
+    text-decoration: none;
+    color: #333;
+    display: block;
+}
+
+.dropdown-item:hover {
+    background-color: #f0f0f0;
+}

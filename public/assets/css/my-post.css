@@ -1,0 +1,40 @@
+.update-status {
+    font-size: 30px;
+    position: relative;
+    left: 97%;
+    bottom: 10px;
+}
+
+.update-status:hover {
+    color: #1313f1;
+}
+
+.modal-content {
+    position: relative;
+    left: 20%;
+}
+
+.status select {
+    position: relative;
+    top: 15px;
+    height: 40px;
+    right: 15px;
+    font-size: 1.1rem;
+    padding: 0 20px;
+}   
+
+.btn-update {
+    position: relative;
+    bottom: 17px;
+    padding: 10px 30px;
+    left: 62%;
+    font-weight: 600;
+    border: none;
+    background: #4CAF50;
+    color: #ffff;
+    border-radius: 5px;
+}
+
+.btn-update:hover {
+    background: #3aa13e;
+}

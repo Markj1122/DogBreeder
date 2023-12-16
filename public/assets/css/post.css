@@ -1,0 +1,534 @@
+.open-modal {
+    padding: 8px 20px;
+    position: relative; 
+    left: 10%;
+    bottom: 0;
+    border-radius: 20px;
+    color: #ffff;
+    background-color: #007BFF;
+    border: none;
+}
+
+.open-modal:hover {
+    background-color: #4aa0e6;
+ }
+
+.text-header {
+    text-align: center;
+    position: relative;
+    top: 0;
+}
+
+/* Style the search container */
+.search-container {
+    display: flex;
+    float: right;
+    right: 90px;
+    align-items: center;
+    width: 280px;
+    position: relative;
+    top: 0;
+}
+
+.search-container button {
+    position: relative;
+    bottom: 0;
+    right: 0;
+}
+
+/* Style the search input field */
+.search-container input[type="text"] {
+    padding: 8px;
+    width: 70%;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    outline: none;
+}
+
+/* Style the search button */
+.search-container button[type="submit"] {
+    background-color: #007BFF;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    padding: 7px 12px;
+    cursor: pointer;
+    font-size: 15px;
+    margin-left: 3px;
+}
+
+.search-container button:hover {
+    background-color: #4aa0e6;
+}
+
+/* Display the search result */
+.search-result {
+    font-size: 1.2rem;
+    position: relative;
+    bottom: 20px;
+    left: 30px;
+}
+
+.search-result strong {
+    width: fit-content;
+    height: 5vh;
+    background-color: #ccc;
+}
+    
+/* Add post modal */
+.modal {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    transition: all 0.3s ease-in-out;
+    height: 100%;
+    background-color: rgba(0,0,0,0.5);
+}
+
+.modal-content {
+    background-color: #fff;
+    max-width: 530px;
+    max-height: 78%;
+    animation: slideIn 0.5s forwards;
+    margin: 100px auto;
+    overflow: hidden;
+    padding: 20px;
+    position: relative;
+    bottom: 35px;
+    border-radius: 5px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+}
+
+/* Keyframes for the modal animation */
+@keyframes slideIn {
+    0% {
+      top: -90%;
+      left: -40%;
+      width: 0;
+      height: 0;
+    }
+    100% {
+      top: 40%;
+      left: 22%;
+      width: 80%;
+      height: 80%;
+      transform: translate(-50%, -50%);
+    }
+  }
+
+.content {
+    margin-bottom: 20px;
+}
+
+.modal-content h2 {
+    text-align: center;
+}
+
+.modal-content h3 {
+    position: relative;
+    font-size: 1rem;
+    bottom: 90px;
+    left: 77px;
+}
+
+.modal-content hr {
+    position: relative;
+    bottom: 12px;
+}
+
+.modal-content .profile {
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    position: relative;
+    bottom: 35px;
+    left: 8px;
+    object-fit: cover;
+    border: 3px solid #666;
+}
+
+.modal-content .privacy {
+    width: 75px;
+    position: relative;
+    left: 78px;
+    bottom: 105px;
+    border-radius: 30px;
+    background: #ccc;
+    cursor: pointer;
+}
+
+.modal-content .privacy span {
+    margin-left: 6px;
+    font-size: .9rem;
+}
+
+.modal-content .privacy i {
+    color: #3a96e2;
+    font-size: 13px;
+    position: relative;
+    bottom: 0;
+    left: 5px;
+}
+
+.modal-content textarea {
+    position: relative;
+    bottom: 85px;
+    left: 15px;
+    border: none;
+    font-size: 1rem;
+}
+
+.modal-content textarea:focus {
+    outline: none;
+}
+
+.modal-content .card-container {
+    position : absolute;
+    top: 43%;
+    right: 50.50%;
+    transform :
+    translate(-50%,-50%); 
+}
+
+.modal-content .select-breeds {
+    position: relative;
+    display: flex;
+    width: 11em;
+    height: 3em;
+    top: 48px;
+    border-radius: 5px;
+    overflow: hidden;
+}
+
+.select-breeds select {
+    border: 2px solid #777;
+    box-shadow: none;
+    flex: 1;
+    padding: 0 3px;
+    color: #333;
+    background-color: #ffff;
+    background-image: none;
+    cursor: pointer;
+}
+
+.select-breeds select:focus {
+    color: #999;
+    outline: none;
+}
+
+.select-breeds select::-ms-expand {
+    display: none;
+}
+
+/* Transition */
+.modal-content .select-breeds:hover::after {
+    color: #ccc;
+}
+
+.modal-content .card-box {
+    position : absolute;
+    top: 43%;
+    left: 79.60%;
+    transform :
+    translate(-50%,-50%); 
+}
+
+.modal-content .select-type {
+    position: relative;
+    display: flex;
+    width: 11em;
+    height: 3em;
+    top: 48px;
+    border-radius: 5px;
+    overflow: hidden;
+}
+
+.select-type select {
+    border: 2px solid #777;
+    box-shadow: none;
+    flex: 1;
+    padding: 0 3px;
+    color: #333;
+    background-color: #ffff;
+    background-image: none;
+    cursor: pointer;
+}
+
+.select-type select:focus {
+    color: #999;
+    outline: none;
+}
+
+.select-type select::-ms-expand {
+    display: none;
+}
+
+/* Transition */
+.modal-content .select-type:hover::after {
+    color: #ccc;
+}
+
+.modal-content input {
+    width: 25%;
+    height: 42px;
+    position: relative;
+    bottom: 135px;
+    border: none;
+    float: right;
+    right: 37.40%;
+    border: 2px solid #888;
+    border-radius: 5px;
+    text-indent: 17px;
+    transition: text-indent 0.3s;
+}
+
+.modal-content input:focus {
+    outline: none;
+    text-indent: 8px;
+}
+
+input::placeholder {
+    position: relative;
+    text-indent: 8px;
+    color: #555;
+}
+
+.pet-upload-wrapper {
+    position: relative;
+    left: 12px;
+    bottom: 75px;
+    width: 33%;
+    height: 45px;
+}
+
+.vaccine-upload-wrapper {
+    position: relative;
+    left: 66.80%;
+    bottom: 120px;
+    width: 33%;
+    height: 45px;
+}
+
+.dam-upload-wrapper {
+    position: relative;
+    left: 13px;
+    bottom: 110px;
+    width: 47%;
+    height: 40px;
+}
+
+.sire-upload-wrapper {
+    position: relative;
+    left: 53%;
+    bottom: 150px;
+    width: 47%;
+    height: 40px;
+}
+  
+.vaccine-upload-wrapper:after,
+.pet-upload-wrapper:after,
+.dam-upload-wrapper:after,
+.sire-upload-wrapper:after  {
+    content: attr(data-text);
+    font-size: 14px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background: #fff;
+    padding: 7px 10px;
+    border: 2px solid #555;
+    display: block;
+    width: calc(100% - 40px);
+    pointer-events: none;
+    z-index: 20;
+    height: 40px; /* Height adjustment */
+    line-height: 20px; /* Line-height adjustment */
+    color: #999;
+    border-radius: 5px 10px 10px 5px;
+    font-weight: 300;
+  }
+  
+  .vaccine-upload-wrapper:before,
+  .pet-upload-wrapper:before,
+  .dam-upload-wrapper:before,
+  .sire-upload-wrapper:before  {
+    content: 'Upload';
+    position: absolute;
+    top: -1px;
+    right: 8px;
+    display: inline-block;
+    height: 41px;
+    background: #479de4;;
+    color: #fff;
+    font-weight: 700;
+    z-index: 25;
+    font-size: 12px;
+    line-height: 40px;
+    padding: 0 5px;
+    text-transform: uppercase;
+    pointer-events: none;
+    border-radius: 0 5px 5px 0;
+}
+  
+.vaccine-upload-wrapper:before,
+.pet-upload-wrapper:hover:before,
+.dam-upload-wrapper:hover:before,
+.sire-upload-wrapper:hover:before {
+    background: #328bd4;
+}
+  
+  .vaccine-upload-wrapper input,
+  .pet-upload-wrapper input,
+  .dam-upload-wrapper input, 
+  .sire-upload-wrapper input {
+    opacity: 0;
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    z-index: 99;
+    height: 40px; /* Height adjustment */
+    margin: 0;
+    padding: 0;
+    display: block;
+    cursor: pointer;
+    width: 100%;
+}  
+
+.birthdate {
+    position: relative;
+    bottom: 31px;
+    left: 0;
+}
+
+.modal-content .close {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    font-size: 30px;
+    padding: 0 8px 5px;
+    border-radius: 50%;
+    background-color: #ccc;
+    cursor: pointer;
+}
+
+.modal-content .button {
+    width: 90%;
+    height: 6vh;
+    border-radius: 30px;
+    position: relative;
+    bottom: 110px;
+    left: 5%;
+    color: #fff;
+    border: none;
+    font-size: 1rem;
+    background-color: #479de4;
+}   
+
+.modal-content .button:hover {
+    background-color: #328bd4;
+}
+
+.close:hover {
+    background-color: #c9c6c6;
+}
+  
+
+/* CSS for see more post */
+.modal-cards {
+    position: relative;
+    left: 50px;
+    bottom: 30px;
+    width: 430px;
+    height: 470px;
+    background: #ffff;
+}
+
+.vaccine-image {
+    position: relative;
+    left: 8%;
+}
+
+.vaccine-image img {
+    width: 180px;
+    height: 170px;
+    object-fit: cover;
+    border: 2px solid #666;
+}
+
+.dob {
+    display: flex;
+    font-size: 1rem;
+    justify-content: space-evenly;
+    position: relative;
+    top: 10px;
+    
+}
+
+.dob label {
+    font-weight: bold;
+}
+
+.sire-image {
+    position: relative;
+    top: 10px;
+    right: 80px;
+}
+
+.vaccine-image label {
+    font-size: .8rem;
+    font-weight: bold;
+    padding: 2px 10px;
+    background: #ffff;
+    position: relative;
+    left: 34%;
+    top: 62px;
+}
+
+.sire-image label {
+    font-size: .8rem;
+    font-weight: bold;
+    padding: 2px 8px;
+    background: #ffff;
+    position: relative;
+    left: 33%;
+    top: 62px;
+}
+
+.sire-image img {
+    width: 170px;
+    height: 150px;
+    object-fit: cover;
+    border: 2px solid #666;
+}
+
+.dam-image {
+    position: relative;
+    bottom: 140px;
+    left: 80px;
+}
+
+.dam-image label {
+    font-size: .8rem;
+    font-weight: bold;
+    padding: 2px 7px;
+    background: #ffff;
+    position: relative;
+    top: 63px;
+    left: 36%;
+}
+
+.dam-image img {
+    width: 170px;
+    height: 150px;
+    object-fit: cover;
+    border: 2px solid #666;
+}
+
+.btn-close {
+    position: relative;
+    left: 85%;
+}

@@ -1,0 +1,304 @@
+body {
+    margin: 0;
+    padding: 0;
+    background-image: url(../../src/images/background-image.webp);
+    background-size: cover;
+    font-family: Arial, sans-serif;
+    text-align: center;
+}
+   
+.loginBox {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 390px;
+    height: 430px;
+    padding: 70px 40px;
+    box-sizing: border-box;
+    background: transparent; 
+    border: 2px solid #ccc;
+    border-radius: 10px;
+    backdrop-filter: blur(2px);
+}
+   
+.user {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    overflow: hidden;
+    position: absolute;
+    top: calc(-100px/2);
+    left: calc(50% - 50px);
+    border: 3px dotted #d2dfe7;
+    background: #fff;
+}
+   
+h2 {
+    margin: 0;
+    padding: 0 0 26px;
+    color: #d2dfe7;
+    text-align: center;
+    text-transform: uppercase;
+}
+     
+.loginBox input {
+    width: 100%;
+    margin-bottom: 20px;
+}
+
+.eye-toggle {
+    position: relative;
+    left: 135px;
+    bottom: 35px;
+    color: #222;
+}
+
+.input-group {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+    width: 104%;
+}
+
+.input-group i {
+    font-size: 15px;
+    color: #222;
+    position: relative;
+    left: 5px;
+    top: 10px;
+}
+   
+.loginBox input[type="text"],
+.loginBox input[type="password"] {
+    border: none;
+    border-bottom: 1px solid #fff;
+    background: transparent;
+    outline: none;
+    padding: 5px 0 0 25px;
+    height: 20px;
+    color: #fff;
+    right: 13px;
+    position: relative;
+    top: 20px;
+    font-size: 16px;
+}
+   
+::placeholder {
+    color: #fff;  
+}
+
+.loginBox select {
+    width: 100%;
+    border: 1px solid #fff;
+    background: transparent;
+    outline: none;
+    height: 40px;
+    color: #fff;
+    position: relative;
+    bottom: 10px;
+    font-size: 16px;
+}
+
+.loginBox select:focus {
+    color: #000; 
+    outline: none;
+}
+   
+.loginBox input[type="submit"] {
+    border: none;
+    outline: none;
+    height: 40px;
+    color: #eee;
+    position: relative;
+    bottom: 30px;
+    font-size: 16px;
+    background-color: #0000ff;
+    cursor: pointer;
+    border-radius: 20px;
+    margin: 12px 0 18px;
+    font-weight: bold;
+    text-transform: uppercase;
+    opacity: 60%;
+}
+   
+.loginBox input[type="submit"]:hover {
+    background-color: #06068d;
+    color: #fff;
+}
+
+.success {
+	background: #b0dbb2;
+	color: #4CAF50;
+	padding: 6px 0;
+    position: relative;
+    bottom: 8px;
+    width: 65%;
+    font-size: 13px;
+    left: 23%;
+	border-radius: 5px;
+    margin: -14px;
+}
+
+.error {
+	background: #F2DEDE;
+	color: #A94442;
+	padding: 6px 0;
+    position: relative;
+    bottom: 12px;
+    width: 65%;
+    font-size: 13px;
+    left: 23%;
+	border-radius: 5px;
+    margin: -14px;
+}
+
+.count-down {
+	background: #F2DEDE;
+	color: #A94442;
+	padding: 7px 3px;
+    position: relative;
+    top: 213px;
+    z-index: 1000;
+    width: 65%;
+    font-size: 11px;
+    left: 0;
+	border-radius: 5px;
+    margin: -10px;
+}
+
+.loginBox .remember-forgot {
+    display: flex;
+    justify-content: space-between;
+    font-size: 13px;
+}
+
+.remember-forgot label {
+    color: #fff;
+    display: flex;
+    flex-direction: column-reverse;
+    position: relative;
+    left: 18px;
+}
+
+.remember-forgot input {
+    position: relative;
+    right: 57px;
+    bottom: 17px
+}
+
+.remember-forgot a {
+    color: #fff;
+    text-decoration: none;
+}
+
+.remember-forgot a:hover {
+    text-decoration: underline;
+}
+
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 100;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+}
+
+/* Modal Content */
+.modal-content {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    position: absolute;
+    top: 55%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 470px;
+    height: 19vh;
+}
+
+.close {
+    color: #aaa;
+    left: 50%;
+    font-size: 28px;
+    font-weight: bold;
+    cursor: pointer;
+    position: relative;
+	bottom: 18px;
+}
+
+.close:hover,
+.close:focus {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.modal-content h3 {
+    position: relative;
+    bottom: 55px;
+	color: #ff0000;
+	text-align: center;
+    font-size: 18px;
+}
+
+.modal-content label {
+    display: block;
+    position: relative;
+    bottom: 50px;
+    right: 37%;
+    font-weight: bold;
+	font-size: 15px;
+}
+
+.modal-content input {
+    padding: 6px 0;
+    border: 1px solid #ccc;
+    width: 75%;
+    position: relative;
+    bottom: 45px;
+    right: 11%;
+}
+
+.modal-content button {
+    padding: 6px 22px;
+    font-size: 15px;
+    position: relative;
+    bottom: 94px;
+    left: 39%;
+    border: 1px solid #ccc;
+    background: #20ce26;
+    color: #fff;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.modal-content button:hover {
+    background: #21a726;
+}
+
+p { 
+	font-size: 12px;
+	color: #535353;
+    position: relative;
+    bottom: 65px;
+}
+
+.loginBox .register-link {
+    font-size: 16px;
+    text-align: center;
+    position: relative;
+    top: 20px;
+}
+
+.register-link p a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: 600;
+}
+
+.register-link p a:hover {
+    text-decoration: underline;
+}

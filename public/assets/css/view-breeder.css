@@ -1,0 +1,145 @@
+.table {
+    border-collapse: collapse;
+    width: 100%;
+}
+ 
+.table th,
+.table td,
+.table-responsive {
+    border: 1px solid #000;
+    padding: 8px;
+}
+ 
+.table th {
+    text-align: left;
+}
+
+.page-title {
+    position: relative;
+    top: 25px;
+} 
+
+#refresh-button {
+    padding: 5px 15px;
+    font-size: 16px;
+    border: none;
+    float: right;
+    background: #258ae9;
+    color: #fff;
+    border-radius: 20px;
+    cursor: pointer;
+}
+ 
+ #refresh-button:hover {
+    background: #3596f1;
+}
+ 
+#loader {
+    border: 6px solid #f3f3f3;
+    border-top: 10px solid #3498db;
+    border-radius: 50%;
+    width: 80px;
+    height: 80px;
+    animation: spin 1s linear infinite;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 1000;
+}
+ 
+.hidden {
+    display: none;
+}
+ 
+@keyframes spin {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+}
+
+/* Styles for the modal */
+.modal {
+    display: none; /* Hidden by default */
+    position: fixed;
+    z-index: 1;
+    padding-top: 50px;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgba(0,0,0,0.9);
+  }
+  
+/* Styles for the close button */
+.close {
+    position: absolute;
+    top: 15px;
+    right: 35px;
+    color: white;
+    font-size: 30px;
+    cursor: pointer;
+}
+  
+/* Styles for the image in the modal */
+.modal img {
+    display: block;
+    margin: 0 auto;
+    max-width: 90%;
+    max-height: 90%;
+}
+  
+.border-box-container {
+    border: 1px solid #ccc;
+    padding: 20px;
+    width: 45%;
+    height: 61vh;
+    position: absolute;
+    top: 20px;
+    left: 28%;
+    border-radius: 5px;
+}
+
+.modal-content {
+    height: 50vh;
+    min-width: 150px;
+}
+
+.form-label-profile {
+    font-size: 1.1rem;
+    font-weight: bold;
+    position: relative;
+    bottom: 0;
+    left: 75px;
+}
+
+.form-label-id {
+    font-size: 1.1rem;
+    font-weight: bold;
+    position: relative;
+    bottom: 205px;
+    float: right;
+    right: 18%;
+}
+
+.profile-image {
+    width: 35%;
+    height: 25vh;
+    border-radius: 5px;
+    position: relative;
+    top: 10px;
+    right: 23%;
+    border: 1px solid #888;
+    object-fit: cover;
+}
+
+.id-image {
+    width: 35%;
+    height: 25vh;
+    border-radius: 5px;
+    position: relative;
+    bottom: 170px;
+    object-fit: cover;
+    border: 1px solid #888;
+    left: 32%;
+}
