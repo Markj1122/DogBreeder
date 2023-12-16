@@ -18,8 +18,13 @@
         <?php
         $servername = "localhost";
         $username = "root";
+<<<<<<< HEAD
         $password = "";
         $dbname = "dogbreeder_db"; 
+=======
+        $password = ""; 
+        $dbname = "dogbreeder_db";
+>>>>>>> b2640895fb6c90f4ed5e3a85449dc28ea3211e27
 
         $conn = mysqli_connect($servername, $username, $password, $dbname);
 
