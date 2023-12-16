@@ -18,7 +18,7 @@
         <?php
         $servername = "localhost";
         $username = "root";
-        $password = "";
+        $password = ""; 
         $dbname = "dogbreeder_db";
 
         $conn = mysqli_connect($servername, $username, $password, $dbname);
